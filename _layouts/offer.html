@@ -19,6 +19,32 @@
     {{ content }}
   </div>
 
+  {% if page.affiliate_blocks %}
+  {% for block in page.affiliate_blocks %}
+    <div class="card">
+      <h3>
+        {% if block.type == "booking" %}
+          🏨
+        {% elsif block.type == "gyg" %}
+          🎟
+        {% endif %}
+        {{ block.title }}
+      </h3>
+
+      <a href="{{ block.url }}" target="_blank" class="btn">
+        {% if block.type == "booking" %}
+          Foglalás Booking.com-on
+        {% elsif block.type == "gyg" %}
+          Program foglalás GetYourGuide-on
+        {% else %}
+          Megnézem
+        {% endif %}
+      </a>
+    </div>
+  {% endfor %}
+{% endif %}
+
+
   <a href="{{ '/' | relative_url }}" class="btn">⬅ Vissza a főoldalra</a>
 </div>
 
