@@ -18,10 +18,12 @@
   <div class="card">
     {{ content }}
   </div>
-
   {% if page.affiliate_blocks %}
   {% for block in page.affiliate_blocks %}
-    <div class="card">
+    <div class="affiliate-card 
+      {% if block.type == 'booking' %}affiliate-booking{% endif %}
+      {% if block.type == 'gyg' %}affiliate-gyg{% endif %}
+    ">
       <h3>
         {% if block.type == "booking" %}
           🏨
@@ -31,14 +33,18 @@
         {{ block.title }}
       </h3>
 
-      <a href="{{ block.url }}" target="_blank" class="btn">
-        {% if block.type == "booking" %}
-          Foglalás Booking.com-on
-        {% elsif block.type == "gyg" %}
-          Program foglalás GetYourGuide-on
-        {% else %}
-          Megnézem
-        {% endif %}
+      <a href="{{ block.url }}" target="_blank"
+         class="affiliate-btn 
+         {% if block.type == 'booking' %}btn-booking{% endif %}
+         {% if block.type == 'gyg' %}btn-gyg{% endif %}">
+         
+         {% if block.type == "booking" %}
+           Foglalás Booking.com-on
+         {% elsif block.type == "gyg" %}
+           Program foglalás GetYourGuide-on
+         {% else %}
+           Megnézem
+         {% endif %}
       </a>
     </div>
   {% endfor %}
