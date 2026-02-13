@@ -15,43 +15,45 @@
 </header>
 
 <div class="container">
-  <div class="card">
-    {{ content }}
-  </div>
-  {% if page.affiliate_blocks %}
-  {% for block in page.affiliate_blocks %}
-    <div class="affiliate-card 
-      {% if block.type == 'booking' %}affiliate-booking{% endif %}
-      {% if block.type == 'gyg' %}affiliate-gyg{% endif %}
-    ">
-      <h3>
-        {% if block.type == "booking" %}
-          🏨
-        {% elsif block.type == "gyg" %}
-          🎟
-        {% endif %}
-        {{ block.title }}
-      </h3>
 
-      <a href="{{ block.url }}" target="_blank"
-         class="affiliate-btn 
-         {% if block.type == 'booking' %}btn-booking{% endif %}
-         {% if block.type == 'gyg' %}btn-gyg{% endif %}">
-         
-         {% if block.type == "booking" %}
-           Foglalás Booking.com-on
-         {% elsif block.type == "gyg" %}
-           Program foglalás GetYourGuide-on
-         {% else %}
-           Megnézem
-         {% endif %}
-      </a>
+  <h2>🗓 Útiterv</h2>
+
+  {% for day in page.days %}
+    <div class="card">
+      <h3>{{ day.day }}. nap</h3>
+
+      <ul>
+        {% for act in day.activities %}
+          <li>{{ act.text }}</li>
+        {% endfor %}
+      </ul>
+
+      {% if day.affiliate %}
+        {% for block in day.affiliate %}
+          <div class="affiliate-card 
+            {% if block.type == 'booking' %}affiliate-booking{% endif %}
+            {% if block.type == 'gyg' %}affiliate-gyg{% endif %}">
+            
+            <h4>
+              {% if block.type == "booking" %}🏨{% elsif block.type == "gyg" %}🎟{% endif %}
+              {{ block.title }}
+            </h4>
+
+            <a href="{{ block.url }}" target="_blank"
+               class="affiliate-btn
+               {% if block.type == 'booking' %}btn-booking{% endif %}
+               {% if block.type == 'gyg' %}btn-gyg{% endif %}">
+               {% if block.type == "booking" %}Foglalás Booking.com-on{% elsif block.type == "gyg" %}Program foglalás GetYourGuide-on{% else %}Megnézem{% endif %}
+            </a>
+          </div>
+        {% endfor %}
+      {% endif %}
+
     </div>
   {% endfor %}
-{% endif %}
-
 
   <a href="{{ '/' | relative_url }}" class="btn">⬅ Vissza a főoldalra</a>
+
 </div>
 
 <footer>
