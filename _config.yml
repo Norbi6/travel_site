@@ -1,1 +1,10 @@
+title: Utazási Ajánlatok
+description: Konkrét utazási ajánlatok programmal és költségbontással
+baseurl: ""
+url: ""
+
+collections:
+  offers:
+    output: true
+    permalink: /offers/:name/
 
