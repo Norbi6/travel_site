@@ -25,7 +25,7 @@ title: Főoldal
     <div class="card">
       <h3>{{ offer.title }}</h3>
       <p>{{ offer.duration }} – {{ offer.price }}</p>
-      <a href="{{ offer.url }}" class="btn">Részletek</a>
+      <a href="{{ offer.url | relative_url }}" class="btn">Részletek</a>
     </div>
   {% endfor %}
 
