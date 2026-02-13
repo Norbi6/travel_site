@@ -1,47 +1,39 @@
+---
+layout: default
+title: Főoldal
+---
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Utazási Ajánlatok | Budget & Cruise</title>
-  <meta name="description" content="Konkrét utazási ajánlatok programmal és költségbontással. Repülős utak, hajóutak, city break ötletek." />
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
 
 <header>
-  <h1>Konkrét utazási ajánlatok ✈️🚢💸</h1>
-  <p>Program + költség egyben. Egyszerű, átlátható útitervek.</p>
+  <h1>Utazási Ajánlatok ✈️</h1>
+  <p>Program + költség egyben</p>
 </header>
 
 <div class="container">
+  <div class="section-title">Ajánlatok</div>
 
-  <div class="section-title">Legfrissebb ajánlatok</div>
-
-  <div class="card">
-    <h3>Template</h3>
-    <p>City break repülőjeggyel, szállással és napi programmal.</p>
-    <a href="offers/template.html" class="btn">Template</a>
-  </div>
-
-  <div class="card">
-    <h3>🏝 Maldív-szigetek – 7 nap</h3>
-    <p>Trópusi pihenés programjavaslattal és költségbontással.</p>
-    <a href="offers/maldives-7-days.html" class="btn">Részletek</a>
-  </div>
-
-  <div class="card">
-    <h3>🚢 Földközi-tengeri hajóút – 5 város</h3>
-    <p>Barcelona, Marseille, Genova, Nápoly, Palermo egy utazással.</p>
-    <a href="offers/med-cruise-5-stops.html" class="btn">Részletek</a>
-  </div>
+  {% for offer in site.offers %}
+    <div class="card">
+      <h3>{{ offer.title }}</h3>
+      <p>{{ offer.duration }} – {{ offer.price }}</p>
+      <a href="{{ offer.url }}" class="btn">Részletek</a>
+    </div>
+  {% endfor %}
 
 </div>
 
 <footer>
-  © 2026 Utazási Ajánlatok |
-  Kövess Instagramon az új ajánlatokért
+  © 2026 Utazási Ajánlatok
 </footer>
 
 </body>
+</html>
