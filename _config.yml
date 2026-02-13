@@ -1,6 +1,6 @@
 title: Utazási Ajánlatok
 description: Konkrét utazási ajánlatok programmal és költségbontással
-baseurl: "/travel-site"
+baseurl: "/travel_site"
 url: ""
 
 collections:
