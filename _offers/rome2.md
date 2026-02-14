@@ -5,25 +5,31 @@ description: "3 napos római út"
 duration: "3 nap"
 price: "250 €"
 
-affiliate_blocks:
-  - title: "1. nap – Ajánlott szállás"
-    type: "booking"
-    url: "https://booking.com/affiliate-link-1"
+days:
+  - day: 1
+    activities:
+      - text: "Colosseum látogatás"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/affiliate-colosseum"
+      - text: "Forum Romanum séta"
+      - text: "Trevi-kút este"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/affiliate-trevi"
 
-  - title: "2. nap – Colosseum belépő"
-    type: "gyg"
-    url: "https://getyourguide.com/affiliate-link-1"
+  - day: 2
+    activities:
+      - text: "Vatikán látogatás"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/affiliate-vatican"
 
-  - title: "3. nap – Alternatív szállás"
-    type: "booking"
-    url: "https://booking.com/affiliate-link-2"
+  - day: 3
+    activities:
+      - text: "Spanyol lépcső"
+      - text: "Panteon"
+        affiliate:
+          type: "booking"
+          url: "https://booking.com/affiliate-panteon"
 ---
-
-## 🗓 1. nap
-Colosseum, Forum Romanum...
-
-## 🗓 2. nap
-Vatikán...
-
-## 🗓 3. nap
-Panteon...
