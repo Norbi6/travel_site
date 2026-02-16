@@ -32,49 +32,38 @@
 
   <h2 class="section-title">🗓 Útiterv</h2>
 
-  {% for day in page.days %}
+  {% for section in page.sections %}
   <div class="day-card day-{{ forloop.index }}">
-
-    <h3>{{ day.day }}. nap</h3>
+    <h3>{{ section.title }}</h3>
 
     <ul class="activity-list">
-      {% for act in day.activities %}
+      {% for act in section.activities %}
         <li class="activity-row">
 
           {% if act.affiliate and act.affiliate.link_on_title == true %}
-            
-            <a href="{{ act.affiliate.url }}"
-               target="_blank"
+            <a href="{{ act.affiliate.url }}" target="_blank"
                class="activity-link booking-link">
               {{ act.text }}
             </a>
-
           {% else %}
-
-            <span class="activity-text">
-              {{ act.text }}
-            </span>
-
+            <span class="activity-text">{{ act.text }}</span>
           {% endif %}
 
           {% if act.affiliate and act.affiliate.link_on_title != true %}
-
-            <a href="{{ act.affiliate.url }}"
-               target="_blank"
+            <a href="{{ act.affiliate.url }}" target="_blank"
                class="affiliate-btn
                {% if act.affiliate.type == 'booking' %}btn-booking{% endif %}
                {% if act.affiliate.type == 'gyg' %}btn-gyg{% endif %}">
               Foglalás
             </a>
-
           {% endif %}
 
         </li>
       {% endfor %}
     </ul>
-
   </div>
 {% endfor %}
+
 
 
   <a href="{{ '/' | relative_url }}" class="btn">⬅ Vissza a főoldalra</a>
