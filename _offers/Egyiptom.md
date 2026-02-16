@@ -2,23 +2,23 @@
 layout: offer
 title: "Egyiptom"
 description: "Egyiptomi körutazás"
-duration: "3 nap"
+duration: "Több nap"
 price: "250 €"
 image: "/assets/images/1_srDpAnFoIVYhF6_hmgMXnQ.jpg"
 
 sections:
-  - title: "Róma"
+  - title: "Kairó"
     activities:
-      - text: "Colosseum látogatás"
+      - text: "Gízai piramisok"
         affiliate:
           type: "gyg"
           url: "https://getyourguide.com/colosseum"
-      - text: "Trevi-kút"
-  - title: "Firenze"
+      - text: "Szfinx"
+  - title: "Luxor"
     activities:
-      - text: "Uffizi Galéria"
+      - text: "Valley of the kings"
         affiliate:
           type: "gyg"
           url: "https://getyourguide.com/uffizi"
-      - text: "Ponte Vecchio séta"
+      - text: "Templomok"
 ---
