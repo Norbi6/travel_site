@@ -78,65 +78,6 @@ footer {
   color: #6b7280;
 }
 
-/* ===== Affiliate blokkok ===== */
-
-.affiliate-card {
-  border: 2px solid #e5e7eb;
-  background: #ffffff;
-  padding: 20px;
-  margin: 25px 0;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.affiliate-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.affiliate-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.1rem;
-}
-
-/* Booking típus */
-
-.affiliate-booking {
-  border-left: 6px solid #003580;
-}
-
-/* GetYourGuide típus */
-
-.affiliate-gyg {
-  border-left: 6px solid #ff6b00;
-}
-
-/* Affiliate gomb */
-
-.affiliate-btn {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: white;
-  transition: opacity 0.2s ease;
-}
-
-.affiliate-btn:hover {
-  opacity: 0.9;
-}
-
-.btn-booking {
-  background-color: #003580;
-}
-
-.btn-gyg {
-  background-color: #ff6b00;
-}
 
 .activity-row {
   display: flex;
@@ -179,4 +120,27 @@ footer {
 .btn-gyg {
   background-color: #ff6b00;
 }
+
+.day-card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  border-left: 6px solid #22c55e;
+}
+
+.day-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.activity-list {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+}
+
 
