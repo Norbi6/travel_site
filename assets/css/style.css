@@ -89,7 +89,12 @@ footer {
 }
 
 /* Szállás link stílus */
-.activity-text, .activity-link {
+. activity-text {
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.activity-link {
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease;
