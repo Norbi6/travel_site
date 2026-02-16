@@ -143,4 +143,11 @@ footer {
   margin: 0;
 }
 
+.day-1 { border-left-color: #22c55e; }
+.day-2 { border-left-color: #f97316; }
+.day-3 { border-left-color: #2563eb; }
+.day-4 { border-left-color: #a855f7; }
+.day-5 { border-left-color: #ec4899; }
+
+
 
