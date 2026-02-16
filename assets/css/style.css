@@ -224,10 +224,6 @@ footer {
   font-size: 1.1rem;
 }
 
-@media (max-width: 640px) {
-  .offer-hero {
-    aspect-ratio: 4 / 3;
-  }
-  }
+
 
 
