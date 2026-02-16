@@ -21,38 +21,49 @@
   <h2 class="section-title">🗓 Útiterv</h2>
 
   {% for day in page.days %}
-    <div class="card">
-      <h3>{{ day.day }}. nap</h3>
+  <div class="day-card">
 
-      <ul>
-        {% for act in day.activities %}
-          <li>{{ act.text }}</li>
-        {% endfor %}
-      </ul>
+    <h3>{{ day.day }}. nap</h3>
 
-      {% if day.affiliate %}
-        {% for block in day.affiliate %}
-          <div class="affiliate-card 
-            {% if block.type == 'booking' %}affiliate-booking{% endif %}
-            {% if block.type == 'gyg' %}affiliate-gyg{% endif %}">
+    <ul class="activity-list">
+      {% for act in day.activities %}
+        <li class="activity-row">
+
+          {% if act.affiliate and act.affiliate.link_on_title == true %}
             
-            <h4>
-              {% if block.type == "booking" %}🏨{% elsif block.type == "gyg" %}🎟{% endif %}
-              {{ block.title }}
-            </h4>
-
-            <a href="{{ block.url }}" target="_blank"
-               class="affiliate-btn
-               {% if block.type == 'booking' %}btn-booking{% endif %}
-               {% if block.type == 'gyg' %}btn-gyg{% endif %}">
-               {% if block.type == "booking" %}Foglalás Booking.com-on{% elsif block.type == "gyg" %}Program foglalás GetYourGuide-on{% else %}Megnézem{% endif %}
+            <a href="{{ act.affiliate.url }}"
+               target="_blank"
+               class="activity-link booking-link">
+              {{ act.text }}
             </a>
-          </div>
-        {% endfor %}
-      {% endif %}
 
-    </div>
-  {% endfor %}
+          {% else %}
+
+            <span class="activity-text">
+              {{ act.text }}
+            </span>
+
+          {% endif %}
+
+          {% if act.affiliate and act.affiliate.link_on_title != true %}
+
+            <a href="{{ act.affiliate.url }}"
+               target="_blank"
+               class="affiliate-btn
+               {% if act.affiliate.type == 'booking' %}btn-booking{% endif %}
+               {% if act.affiliate.type == 'gyg' %}btn-gyg{% endif %}">
+              Foglalás
+            </a>
+
+          {% endif %}
+
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+{% endfor %}
+
 
   <a href="{{ '/' | relative_url }}" class="btn">⬅ Vissza a főoldalra</a>
 
