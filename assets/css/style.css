@@ -198,7 +198,6 @@ footer {
 .offer-hero {
   width: 100%;
   height: clamp(220px, 40vh, 420px);
-  box-sizing: border-box;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -234,9 +233,6 @@ footer {
   }
 }
 
-* {
-  outline: 1px solid red;
-}
 
 
 
