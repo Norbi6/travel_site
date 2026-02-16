@@ -193,14 +193,18 @@ footer {
   font-weight: bold;
   font-size: 1rem;
   }
+
 .offer-hero {
-  height: 380px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   align-items: flex-end;
 }
+
 
 .hero-overlay {
   width: 100%;
@@ -219,5 +223,11 @@ footer {
   margin-top: 10px;
   font-size: 1.1rem;
 }
+
+@media (max-width: 640px) {
+  .offer-hero {
+    aspect-ratio: 4 / 3;
+  }
+  }
 
 
