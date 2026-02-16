@@ -3,7 +3,7 @@ layout: offer
 title: "Iceland"
 description: "Icelandic experiences"
 price: "500 €"
-image: "/assets/images/Iceland.jpg"
+image: "/assets/images/Iceland.jpeg"
 
 sections:
   - title: "Grindavik"
