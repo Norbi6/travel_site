@@ -149,5 +149,49 @@ footer {
 .day-4 { border-left-color: #a855f7; }
 .day-5 { border-left-color: #ec4899; }
 
+.offer-card {
+  display: block;
+  height: 260px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.offer-overlay h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.offer-overlay p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.offer-price {
+  font-weight: bold;
+  font-size: 1rem;
+  }
 
 
