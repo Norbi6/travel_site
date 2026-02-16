@@ -22,12 +22,19 @@ title: Főoldal
   <div class="section-title">Ajánlatok</div>
 
   {% for offer in site.offers %}
-    <div class="card">
+  <a href="{{ offer.url | relative_url }}" class="offer-card"
+     style="background-image: url('{{ offer.image | relative_url }}');">
+
+    <div class="offer-overlay">
       <h3>{{ offer.title }}</h3>
-      <p>{{ offer.duration }} – {{ offer.price }}</p>
-      <a href="{{ offer.url | relative_url }}" class="btn">Részletek</a>
+      <p>{{ offer.description }}</p>
+      {% if offer.price %}
+        <span class="offer-price">{{ offer.price }}</span>
+      {% endif %}
     </div>
-  {% endfor %}
+
+  </a>
+{% endfor %}
 
 </div>
 
