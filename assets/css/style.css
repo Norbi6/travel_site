@@ -28,7 +28,6 @@ header p {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .section-title {
@@ -234,6 +233,9 @@ footer {
   }
 }
 
+* {
+  outline: 1px solid red;
+}
 
 
 
