@@ -9,11 +9,23 @@
 </head>
 <body>
 
-<header class="hero">
-  <h1>{{ page.title }}</h1>
-  <div class="price">{{ page.price }}</div>
-  <p class="subtitle">{{ page.duration }}</p>
+<header class="offer-hero"
+        style="background-image: url('{{ page.image | relative_url }}');">
+
+  <div class="hero-overlay">
+    <h1>{{ page.title }}</h1>
+
+    {% if page.price %}
+      <p class="hero-price">{{ page.price }}</p>
+    {% endif %}
+
+    {% if page.description %}
+      <p>{{ page.description }}</p>
+    {% endif %}
+  </div>
+
 </header>
+
 
 
 <div class="container">
