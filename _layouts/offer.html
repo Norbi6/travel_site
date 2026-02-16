@@ -21,7 +21,7 @@
   <h2 class="section-title">🗓 Útiterv</h2>
 
   {% for day in page.days %}
-  <div class="day-card">
+  <div class="day-card day-{{ forloop.index }}">
 
     <h3>{{ day.day }}. nap</h3>
 
