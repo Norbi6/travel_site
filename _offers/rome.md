@@ -32,5 +32,5 @@ days:
         affiliate:
           type: "booking"
           url: "https://booking.com/affiliate-panteon"
-        link_on_title: true
+          link_on_title: true
 ---
