@@ -1,6 +1,6 @@
 ---
 layout: offer
-title: "Egyiptom"
+title: "Egypt"
 description: "Egyiptomi körutazás"
 duration: "3 nap"
 price: "250 €"
