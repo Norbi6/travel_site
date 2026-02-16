@@ -225,6 +225,14 @@ footer {
   font-size: 1.1rem;
 }
 
+@media (max-width: 640px) {
+  .offer-hero {
+    height: 240px;
+    background-position: center center;
+  }
+}
+
+
 
 
 
