@@ -1,30 +1,35 @@
 ---
 layout: offer
 title: "Róma – 3 nap"
-description: "3 napos római útiterv programmal és költségbontással"
+description: "3 napos római út"
 duration: "3 nap"
 price: "250 €"
+
+days:
+  - day: 1
+    activities:
+      - text: "Colosseum látogatás"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/affiliate-colosseum"
+      - text: "Forum Romanum séta"
+      - text: "Trevi-kút este"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/affiliate-trevi"
+
+  - day: 2
+    activities:
+      - text: "Vatikán látogatás"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/affiliate-vatican"
+
+  - day: 3
+    activities:
+      - text: "Spanyol lépcső"
+      - text: "Panteon"
+        affiliate:
+          type: "booking"
+          url: "https://booking.com/affiliate-panteon"
 ---
-
-## 📌 Összefoglaló
-
-**Repülő:** 80 €  
-**Szállás:** 120 €  
-**Program + étkezés:** 50 €  
-
----
-
-## 🗓 1. nap
-- Colosseum
-- Forum Romanum
-- Trevi-kút este
-
-## 🗓 2. nap
-- Vatikán
-- Szent Péter Bazilika
-- Trastevere vacsora
-
-## 🗓 3. nap
-- Spanyol lépcső
-- Panteon
-- Hazautazás
