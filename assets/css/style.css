@@ -193,5 +193,31 @@ footer {
   font-weight: bold;
   font-size: 1rem;
   }
+.offer-hero {
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-overlay {
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.2));
+  color: white;
+  padding: 40px 20px;
+}
+
+.hero-overlay h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero-price {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
 
 
