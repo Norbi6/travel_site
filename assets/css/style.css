@@ -85,13 +85,16 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 /* Szállás link stílus */
-.activity-link {
+.activity-text, .activity-link {
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease;
+  word-break: break-word;
+  max-width: 100%;
 }
 
 .booking-link {
