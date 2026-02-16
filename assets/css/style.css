@@ -138,4 +138,45 @@ footer {
   background-color: #ff6b00;
 }
 
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Szállás link stílus */
+.activity-link {
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.booking-link {
+  color: #003580;
+}
+
+.booking-link:hover {
+  text-decoration: underline;
+  color: #001f4d;
+}
+
+/* Kis foglalás gomb programokhoz */
+.affiliate-btn {
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+.btn-booking {
+  background-color: #003580;
+}
+
+.btn-gyg {
+  background-color: #ff6b00;
+}
 
