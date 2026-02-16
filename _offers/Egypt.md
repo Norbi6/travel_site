@@ -4,7 +4,7 @@ title: "Róma – 3 nap"
 description: "3 napos római út"
 duration: "3 nap"
 price: "250 €"
-image: "/assets/images/egypt.jpg"
+image: "/assets/images/1_srDpAnFoIVYhF6_hmgMXnQ.jpg"
 
 days:
   - day: 1
