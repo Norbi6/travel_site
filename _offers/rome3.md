@@ -1,9 +1,10 @@
 ---
 layout: offer
-title: "Olaszország körút"
-description: "10 napos körút Olaszországban"
-price: "850 €"
-image: "/assets/images/italy-trip.jpg"
+title: "Egyiptom"
+description: "Egyiptomi körutazás"
+duration: "3 nap"
+price: "250 €"
+image: "/assets/images/1_srDpAnFoIVYhF6_hmgMXnQ.jpg"
 
 sections:
   - title: "Róma"
