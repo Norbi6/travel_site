@@ -1,36 +1,23 @@
 ---
 layout: offer
-title: "Róma – 3 nap"
-description: "3 napos római út"
-duration: "3 nap"
-price: "250 €"
+title: "Olaszország körút"
+description: "10 napos körút Olaszországban"
+price: "850 €"
+image: "/assets/images/italy-trip.jpg"
 
-days:
-  - day: 1
+sections:
+  - title: "Róma"
     activities:
       - text: "Colosseum látogatás"
-      - text: "Forum Romanum séta"
-      - text: "Trevi-kút este"
-    affiliate:
-      - type: "booking"
-        title: "Szállás az 1. napra"
-        url: "https://booking.com/affiliate-link-1"
-
-  - day: 2
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/colosseum"
+      - text: "Trevi-kút"
+  - title: "Firenze"
     activities:
-      - text: "Vatikán"
-      - text: "Szent Péter Bazilika"
-    affiliate:
-      - type: "gyg"
-        title: "Vatikán belépő"
-        url: "https://getyourguide.com/affiliate-link-1"
-
-  - day: 3
-    activities:
-      - text: "Spanyol lépcső"
-      - text: "Panteon"
-    affiliate:
-      - type: "booking"
-        title: "Alternatív szállás"
-        url: "https://booking.com/affiliate-link-2"
+      - text: "Uffizi Galéria"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/uffizi"
+      - text: "Ponte Vecchio séta"
 ---
