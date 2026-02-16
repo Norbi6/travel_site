@@ -196,14 +196,15 @@ footer {
 
 .offer-hero {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: clamp(220px, 40vh, 420px);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
   align-items: flex-end;
 }
+
 
 
 .hero-overlay {
