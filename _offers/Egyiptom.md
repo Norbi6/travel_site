@@ -21,4 +21,20 @@ sections:
           type: "gyg"
           url: "https://getyourguide.com/uffizi"
       - text: "Templomok"
+  - title: "Alexandria"
+    activities:
+      - text: "Katakombák"
+        affiliate:
+          type: "gyg"
+          url: "https://getyourguide.com/colosseum"
+      - text: "Templomok"
+  - title: "Tengerpartok"
+    activities:
+      - text: "Sharm El-Sheikh"
+      - text: "Hotel"
+        affiliate:
+           type: "booking"
+           url: "https://booking.com"
+      - text: "Hurghada"
+      - text: "Marsha Alam"
 ---
