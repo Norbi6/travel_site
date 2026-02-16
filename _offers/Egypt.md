@@ -1,7 +1,7 @@
 ---
 layout: offer
-title: "Egyiptom – 3 nap"
-description: "3 napos egyiptomi út"
+title: "Egyiptom"
+description: "Egyiptomi körutazás"
 duration: "3 nap"
 price: "250 €"
 image: "/assets/images/1_srDpAnFoIVYhF6_hmgMXnQ.jpg"
